@@ -9,13 +9,15 @@ class MainMNArmstrong{
                 int n=sc.nextInt();
                 printArmstrong(m,n);
         }
-        static void printArmstrong(int m,int n){
-              for(int i=m;i<=n;i++){
-                    if(isArmstrong(i)){
-                          System.out.println(i);
-                    }
-              }
-      }
+       static void printArmstrong(int n){
+                for(int i=1;n>0;i++){
+                        if(isArmstrong(i)){
+                                System.out.println(i);
+                                n--;
+                        }
+                }
+        }
+
       static boolean isArmstrong(int n){
               int temp=n;
               int sum=0;
